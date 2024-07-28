@@ -18,6 +18,9 @@ class Vipi {
 
          float f = 5.5f;
          int num1 = (int) f;
+         int dig = 11;
+         ++dig;
+         System.out.println(dig);
         System.out.println(num1);
 
         //Type conversion
