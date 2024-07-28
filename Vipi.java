@@ -19,7 +19,8 @@ class Vipi {
          float f = 5.5f;
          int num1 = (int) f;
          int dig = 11;
-         ++dig;
+         //  ++dig;
+         --dig;
          System.out.println(dig);
         System.out.println(num1);
 
