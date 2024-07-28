@@ -20,14 +20,14 @@ class Vipi {
          int num1 = (int) f;
          int dig = 11;
          //  ++dig;
-         --dig;
-         System.out.println(dig);
-        System.out.println(num1);
+         int result = ++dig;
+         System.out.println(result);
+       
 
         //Type conversion
         byte x = 7;
         byte y = 3;
-        int result = x * y;
-        System.out.println(result);
+        // int result = x * y;
+        
     }
 }
