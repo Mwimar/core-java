@@ -69,9 +69,13 @@ class Vipi {
         // } = 
 
         
-        for (int i = 1; i <= 5; i++)
+        for (int i = 1; i <= 7; i++)
          {
-            System.out.println("Vipi " + i);
+             System.out.println("Day " + i);
+            
+             for (int t = 1; t <= 9; t++) {
+                System.out.println("  " + (t+8) +"HRS"  + ("-") + (t+9) +"HRS");
+             }
             
           
         } 
