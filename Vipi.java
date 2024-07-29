@@ -72,6 +72,11 @@ class Vipi {
 
         while (i <= 5) {
             System.out.println("Vipi " + i);
+            int k = 0;
+            while (k <= 3) {
+                System.out.println("Niaje " + k);
+                k++;
+            }
             i++;
         }
         System.out.println("Kwaheri " + i);
