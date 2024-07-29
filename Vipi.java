@@ -68,13 +68,13 @@ class Vipi {
         //     break;
         // } = 
 
-        int i = 5;
-
-        do {
+        
+        for (int i = 1; i <= 5; i++)
+         {
             System.out.println("Vipi " + i);
-            i++;
+            
           
-        } while (i <= 5);
+        } 
       
 
     }
