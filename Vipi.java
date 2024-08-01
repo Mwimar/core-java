@@ -6,7 +6,7 @@ class Computer {
     }
 
 
-    public String getPen(){
+    public String getPen(int num){
         return "Pen";
     }
 
