@@ -31,6 +31,8 @@ class Vipi {
         students[1] = s2;
         students[2] = s3;
 
+        System.out.println(s1.name+ ":" + s1.marks);
+
 
 
 
