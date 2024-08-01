@@ -23,7 +23,11 @@ class Vipi {
 
     public static void main(String a[]) {
 
-        int nums[][] = new int[3][4];
+        // int nums[][] = new int[3][4];
+        int nums[][] = new int[3][];// jagged array
+        nums[0] = new int[3];
+        nums[1] = new int[4];
+        nums[2] = new int[2];
 
         
         for (int i = 0; i < 3; i++) {
