@@ -23,11 +23,8 @@ class Vipi {
 
     public static void main(String a[]) {
 
-        Calculator obj = new Calculator();
-        double result = obj.add( 16.5, 17);
-        System.out.println(result);
-
-        
+        int nums[] = { 5, 6, 7 };
+        System.out.println(nums.length);
     }
     }
 
