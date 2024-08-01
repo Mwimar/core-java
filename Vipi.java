@@ -17,6 +17,8 @@ class Vipi {
 
     public static void main(String a[]) {
 
+        Computer obj = new Computer();
+        
     }
     }
 
