@@ -1,30 +1,33 @@
-class Computer {
+class Calculator {
+    public int add(int num1, int num2) {
 
-    public void playMusic() {
-        System.out.println("Playing music");
-
+        return num1 + num2;
     }
 
+    public int add(int num1, int num2, int num3) {
 
-    public String getPen(int num) {
-        if(num>=10)
-            return "Pen";
-        else
-            return "No Pen";
+        return num1 + num2 + num3;
     }
+    
+    public double add(double num1, int num3) {
 
-  }
+        return num1 + num3;
+    }
+}
+
+
+   
 
 
 class Vipi {
 
     public static void main(String a[]) {
 
-        Computer obj = new Computer();
-        obj.playMusic();
+        Calculator obj = new Calculator();
+        double result = obj.add( 16.5, 17);
+        System.out.println(result);
 
-        String str = obj.getPen(1);
-        System.out.println(str);
+        
     }
     }
 
