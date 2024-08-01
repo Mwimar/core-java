@@ -16,12 +16,12 @@ class Vipi {
         s1.name = "Spinabenz";
         s1.marks = 78;
 
-         Student s2 = new Student();
+        Student s2 = new Student();
         s2.rollno = 30;
         s2.name = "Sniper";
         s2.marks = 92;
 
-         Student s3 = new Student();
+        Student s3 = new Student();
         s3.rollno = 40;
         s3.name = "Von";
         s3.marks = 78;
@@ -31,14 +31,14 @@ class Vipi {
         students[1] = s2;
         students[2] = s3;
 
-        for (int i = 0; i < students.length; i++) {
-            
-            System.out.println(students[i].name+ ":" + students[i].marks);
+        // for (int i = 0; i < students.length; i++) {
+
+        //     System.out.println(students[i].name + ":" + students[i].marks);
+        // }
+
+        for (Student stud : students) {
+            System.out.println(stud.name + ":" + stud.marks);
         }
-
-
-
-
 
         // int nums[][] = new int[3][4];
         // int nums[][] = new int[3][];// jagged array
@@ -69,13 +69,20 @@ class Vipi {
         //     System.out.println();
         // }
 
-        // int[] nums = new int[3];
-        // nums[0] = 4;
-        // nums[1] = 7;
-        // nums[2] = 3;
+        int[] nums = new int[3];
+        nums[0] = 4;
+        nums[1] = 7;
+        nums[2] = 3;
+
         // for (int i = 0; i < nums.length; i++) {
         //     System.out.println(nums[i]);
         // }
+
+        //Enhanced for loop or forEach loop;
+        // for(int n:nums){
+        //     System.out.println(n);
+        // }
+
     }
     }
 
