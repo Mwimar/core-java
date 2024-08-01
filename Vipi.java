@@ -6,8 +6,11 @@ class Computer {
     }
 
 
-    public String getPen(int num){
-        return "Pen";
+    public String getPen(int num) {
+        if(num>=10)
+            return "Pen";
+        else
+            return "No Pen";
     }
 
   }
@@ -20,7 +23,7 @@ class Vipi {
         Computer obj = new Computer();
         obj.playMusic();
 
-        String str = obj.getPen(10);
+        String str = obj.getPen(1);
         System.out.println(str);
     }
     }
