@@ -4,6 +4,12 @@ class Computer {
         System.out.println("Playing music");
 
     }
+
+
+    public String getPen(){
+        return "Pen";
+    }
+
   }
 
 
