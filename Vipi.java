@@ -30,19 +30,20 @@ class Mobile {
 
 class Vipi {
 
-    public static void main(String a[]) {
+    public static void main(String a[]) throws ClassNotFoundException {
 
-        Mobile mobile1 = new Mobile();
-        mobile1.brand = "Tecno";
-        mobile1.price = 50000;
-        Mobile.name = "Spark";
+        // Mobile mobile1 = new Mobile();
+        // mobile1.brand = "Tecno";
+        // mobile1.price = 50000;
+        // Mobile.name = "Spark";
 
-        Mobile mobile2 = new Mobile();
+        // Mobile mobile2 = new Mobile();
        
 
         // mobile1.show();
         // mobile2.show();
-    //    Mobile.show1(mobile1);
+        //    Mobile.show1(mobile1);
+        Class.forName("Mobile");
 
 
     }
