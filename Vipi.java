@@ -84,10 +84,14 @@ class Vipi {
         // }
 
         String name = "Kevin";
-        System.out.println(name.concat(" Gates"));
+        // System.out.println(name.concat(" Gates"));
 
         StringBuffer sb = new StringBuffer("Kevin");
-        System.out.println(sb.capacity());
+        sb.append(" Gates");
+        // System.out.println(sb);
+        // System.out.println(sb.capacity());
+        String str = sb.toString();
+        System.out.println(str);
 
     }
     }
