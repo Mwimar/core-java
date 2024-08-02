@@ -1,15 +1,22 @@
 class Mobile {
     String brand;
     int price;
-    String name;
+   static  String name;
 
-    public void show() {
-        System.out.println(brand + ":" + price + ":" + name);
+   public void show() {
+       System.out.println(brand + ":" + price + ":" + name);
+   }
+    
+
+
+    public Mobile() {
+        brand = "";
+        price = 200;
     }
     
-    public static void show1(Mobile mobile) {
-        System.out.println(mobile.brand + ":" + mobile.price + ":" + mobile.name);
-    }
+    // public static void show1(Mobile mobile) {
+    //     System.out.println(mobile.brand + ":" + mobile.price + ":" + mobile.name);
+    // }
 }
 
    
@@ -31,7 +38,7 @@ class Vipi {
 
         // mobile1.show();
         mobile2.show();
-       Mobile.show1(mobile1);
+    //    Mobile.show1(mobile1);
 
 
     }
