@@ -22,6 +22,7 @@ class Vipi {
         Human obj = new Human();
         obj.name = "Mwima";
         obj.age = 25;
+        System.out.println("obj.age");
 
     }
 
