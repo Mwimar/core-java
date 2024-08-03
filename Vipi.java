@@ -1,6 +1,6 @@
 class Human {
-    String name;
-    int age;
+    private String name;
+   private int age;
 }
 
 class Vipi {
@@ -20,9 +20,9 @@ class Vipi {
         // Class.forName("Mobile");
 
         Human obj = new Human();
-        obj.name = "Mwima";
-        obj.age = 25;
-        System.out.println("obj.age");
+        // obj.name = "Mwima";
+        // obj.age = 25;
+        // System.out.println("obj.age");
 
     }
 
