@@ -4,6 +4,10 @@ class Human {
     private String name;
     private int age;
 
+    public Human() {
+        System.out.println("In constructor");
+    }
+
     public String getName() {
         return name;
     }
