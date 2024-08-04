@@ -4,10 +4,14 @@ class Human {
     private String name;
     private int age;
 
-    public Human() {
-        System.out.println("In constructor");
-    }
+   
 
+    public Human(String name, int age) {
+        this.name = name;
+        this.age = age;
+        
+    }
+    
     public String getName() {
         return name;
     }
@@ -31,10 +35,12 @@ class Vipi {
 
        
 
-        Human obj = new Human();
-        obj.setAge(26);
-        obj.setName("Mwima");
-        System.out.println( obj.getName() + ":" + obj.getAge());
+        
+        Human obj1 = new Human("Kevin", 50);
+        // obj.setAge(26);
+        // obj.setName("Mwima");
+        
+        System.out.println( obj1.getName() + ":" + obj1.getAge());
 
     }
 
