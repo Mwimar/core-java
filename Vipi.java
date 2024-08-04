@@ -1,23 +1,22 @@
 class Human {
-    private String name;
-   private int age;
+    private String name = "Kev";
+    private int age = 20;
+   
+    public int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
 }
 
 class Vipi {
 
     public static void main(String a[]) throws ClassNotFoundException {
 
-        // Mobile mobile1 = new Mobile();
-        // mobile1.brand = "Tecno";
-        // mobile1.price = 50000;
-        // Mobile.name = "Spark";
-
-        // Mobile mobile2 = new Mobile();
-
-        // mobile1.show();
-        // mobile2.show();
-        // Mobile.show1(mobile1);
-        // Class.forName("Mobile");
+       
 
         Human obj = new Human();
         // obj.name = "Mwima";
