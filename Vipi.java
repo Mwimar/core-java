@@ -1,17 +1,17 @@
-class A {
-    public void show() {
-        System.out.println("in A show");
+import tools.*;
+
+class Calc {
+    public int add(int a, int b) {
+        return a +b;
     }
 
-    public void config() {
-        System.out.println("in A Config");
-    }
+   
 }
 
-class B extends A {
+class AdvCalc extends Calc{
 
-    public void show() {
-        System.out.println("in B show");
+    public int add(int a, int b) {
+        return a+b+1;
     }
 }
 
@@ -22,9 +22,9 @@ class Vipi {
 
     public static void main(String a[]) {
 
-        B obj = new B();
-        obj.show();
-        obj.config();
+        AdvCalc obj = new AdvCalc();
+        int r1 = obj.add(3, 4);
+      System.out.println(r1);
     }
 
 }
