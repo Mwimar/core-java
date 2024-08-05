@@ -23,7 +23,7 @@ class Vipi {
     // obj1.show2();
 
     int num = 5;
-    Integer numb = new Integer(num);//boxing
+    Integer numb = num;
     System.out.println(numb);
   }
 }
