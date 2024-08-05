@@ -26,6 +26,10 @@ class Vipi {
     Integer numb = num;
 
     int num2 = numb;
-    System.out.println(num2);
+    // System.out.println(num2);
+
+    String str = "50";
+    int digit = Integer.parseInt(str);
+    System.out.println(digit*2);
   }
 }
