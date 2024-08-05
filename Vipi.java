@@ -3,6 +3,10 @@ class Laptop {
   
   String model;
   int price;
+
+  public String toString() {
+    return "Hi";
+  }
  }
 
 
@@ -14,6 +18,6 @@ class Vipi {
     obj.model = "HP";
     obj.price = 400;
     
-   System.out.println(obj);
+   System.out.println(obj.toString());
   }
 }
