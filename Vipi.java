@@ -24,6 +24,8 @@ class Vipi {
 
     int num = 5;
     Integer numb = num;
-    System.out.println(numb);
+
+    int num2 = numb.intValue();
+    System.out.println(num2);
   }
 }
