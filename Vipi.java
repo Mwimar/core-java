@@ -1,36 +1,23 @@
 class A {
-    public A() {
-        super();
-        System.out.println("in A");
+    public void show() {
+        System.out.println("in A show");
     }
 
-    public A(int n) {
-        super();
-        System.out.println("in A int");
+    public void config() {
+        System.out.println("in A Config");
     }
-
 }
 
-class B extends A {
+class B extends A{}
 
-    public B() {
-        super();
-        System.out.println("in B");
-    }
-   
-    public B(int a) {
-        
-        this();
-        System.out.println("in B int");
-    }
 
-}
 
 class Vipi {
 
     public static void main(String a[]) {
 
-        B obj = new B(6);
+        B obj = new B();
+        obj.show();
     }
 
 }
