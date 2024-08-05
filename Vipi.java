@@ -8,7 +8,13 @@ class A {
     }
 }
 
-class B extends A{}
+class B extends A {
+
+    public void show() {
+        System.out.println("in B show");
+    }
+}
+
 
 
 
@@ -18,6 +24,7 @@ class Vipi {
 
         B obj = new B();
         obj.show();
+        obj.config();
     }
 
 }
