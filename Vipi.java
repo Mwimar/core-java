@@ -5,7 +5,7 @@ class Laptop {
   int price;
 
   public String toString() {
-    return "Hi";
+    return model + ":" + price;
   }
  }
 
