@@ -1,4 +1,4 @@
 package tools;
-class A {
-    int marks = 5;
+public class A {
+    public int marks = 5;
 }

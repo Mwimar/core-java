@@ -6,9 +6,8 @@ class Vipi {
 
     public static void main(String a[]) {
 
-        AdvCalc obj = new AdvCalc();
-        int r1 = obj.add(3, 5);
-      System.out.println(r1);
+      A obj = new A();
+     System.out.println(obj.marks);
     }
 
 }
