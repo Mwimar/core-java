@@ -18,5 +18,8 @@ class Vipi {
   public static void main(String a[]) {
     A obj = (A) new B();
     obj.show1();
+
+    B obj1 = (B) obj;
+    obj1.show2();
   }
 }
