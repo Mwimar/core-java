@@ -1,6 +1,6 @@
 
-final class Calc {
-  public void show() {
+ class Calc {
+  public final void show() {
     System.out.println("in Calc");
 
   }
@@ -10,14 +10,18 @@ final class Calc {
   }
 }
 
-// class AdvCalc extends Calc {
+class AdvCalc extends Calc {
+  // public void show() {
+  //   System.out.println("in Adv Calc");
+
+ 
   
-// }
+}
 
 class Vipi {
 
   public static void main(String a[]) {
-    Calc obj = new Calc();
+    AdvCalc obj = new AdvCalc();
     obj.show();
     obj.add(7, 9);
    
