@@ -7,6 +7,15 @@ class Laptop {
   public String toString() {
     return model + ":" + price;
   }
+
+  public boolean equals(Laptop that) {
+    if (this.model.equals(that.model) && this.price == that.price) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
  }
 
 
@@ -17,7 +26,14 @@ class Vipi {
     Laptop obj = new Laptop();
     obj.model = "HP";
     obj.price = 400;
+
+    Laptop obj1 = new Laptop();
+    obj1.model = "HP";
+    obj1.price = 400;
+
+    boolean result = obj.equals(obj1);
+    System.out.println(result);
     
-   System.out.println(obj.toString());
+  //  System.out.println(obj.toString());
   }
 }
