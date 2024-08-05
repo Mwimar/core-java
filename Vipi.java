@@ -1,29 +1,19 @@
 
- class Calc {
-  public final void show() {
-    System.out.println("in Calc");
-
-  }
-
-  public void add(int a, int b) {
-    System.out.println(a + b);
-  }
-}
-
-class AdvCalc extends Calc {
-  // public void show() {
-  //   System.out.println("in Adv Calc");
-
- 
+class Laptop {
   
-}
+  String model;
+  int price;
+ }
+
+
 
 class Vipi {
 
   public static void main(String a[]) {
-    AdvCalc obj = new AdvCalc();
-    obj.show();
-    obj.add(7, 9);
-   
+    Laptop obj = new Laptop();
+    obj.model = "HP";
+    obj.price = 400;
+    
+   System.out.println(obj);
   }
 }
