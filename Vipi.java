@@ -1,35 +1,38 @@
-
 class A {
+  private String model;
 
-  public void show1() {
-    System.out.println("in A show");
-  }
-}
+  private int price;
+  
 
-class B extends A {
-  public void show2() {
-    System.out.println("in B show");
+  //getters
+  public String getModel() {
+    return model;
   }
-}
+
+  public int getPrice() {
+    return price;
+  }
+ 
+
+ 
+  public void show(){
+
+    System.out.println("in A class");
+  }
+
+ 
+  }
 
 
 class Vipi {
 
   public static void main(String a[]) {
-    // A obj = (A) new B();
-    // obj.show1();
+    A obj = new A();
+    // obj.setPrice(4000);
+    
+    
 
-    // B obj1 = (B) obj;
-    // obj1.show2();
+    
 
-    int num = 5;
-    Integer numb = num;
-
-    int num2 = numb;
-    // System.out.println(num2);
-
-    String str = "50";
-    int digit = Integer.parseInt(str);
-    System.out.println(digit*2);
   }
 }
