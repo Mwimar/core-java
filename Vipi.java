@@ -4,6 +4,16 @@ class A {
   private int price;
   
 
+  public A(String model, int price) {
+    this.model = model;
+    this.price = price;
+
+  }
+  
+  public A() {
+    
+  }
+
   //getters
   public String getModel() {
     return model;
@@ -34,12 +44,15 @@ class A {
 class Vipi {
 
   public static void main(String a[]) {
-    A obj = new A();
-    obj.setPrice(4000);
-    obj.setModel("Toyota");
+    A obj1 = new A("Cadillac", 500000);
+    System.out.println(obj1.toString());
+    A obj2 = new A();
 
-    int pri = obj.getPrice();
-    String mod = obj.getModel();
+    obj2.setPrice(4000);
+    obj2.setModel("Toyota");
+
+    int pri = obj2.getPrice();
+    String mod = obj2.getModel();
     System.out.println(pri+ ":"+ mod);
     
     
