@@ -23,10 +23,12 @@ class Vipi {
     try {
       y = 18 / x;
        
-      System.out.println(nums[2]);
+      System.out.println(nums[5]);
     } catch (ArithmeticException e) {
       
       System.out.println("Cannot divide by zero..");
+    } catch(ArrayIndexOutOfBoundsException e){
+System.out.println("Array out of bonds");
     }
     System.out.println(y);
     System.out.println("Bye");
