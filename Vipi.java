@@ -1,3 +1,4 @@
+@Deprecated
 class A {
   public void showTheDatasHere() {
     System.out.println("In A show");
