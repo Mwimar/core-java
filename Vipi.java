@@ -2,6 +2,14 @@ enum Laptop {
   Thinkpad(400), HP(9000), Mac(3000), Acer(500);
   private int price;
 
+  public int getPrice() {
+    return price;
+  }
+
+  public void setPrice(int price) {
+    this.price = price;
+  }
+
   private Laptop(int price) {
     this.price = price;
   }
