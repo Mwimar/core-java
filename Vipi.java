@@ -9,8 +9,10 @@ class Vipi {
   public static void main(String a[]) {
    
     Status[] rr = Status.values();
-    System.out.println(rr);
-    
+   
+    for (Status r : rr) {
+      System.out.println(r);
+    }
 
   }
 }
