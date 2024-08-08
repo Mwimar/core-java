@@ -19,16 +19,17 @@ class Vipi {
     // System.out.println(result);
     int x = 0;
     int y = 0;
-    int[] nums = new int [5];
+    
     try {
       y = 18 / x;
        
-      System.out.println(nums[5]);
+      
     } catch (ArithmeticException e) {
       
-      System.out.println("Cannot divide by zero..");
-    } catch(ArrayIndexOutOfBoundsException e){
-System.out.println("Array out of bonds");
+      y = 18 / 1;
+    
+    } catch (Exception e) {
+      System.out.println("Sth went Wrong " + e);
     }
     System.out.println(y);
     System.out.println("Bye");
