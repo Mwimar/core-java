@@ -13,9 +13,13 @@ interface A {
 class Vipi {
 
   public static void main(String a[]) {
-    A obj = (int x, int y) -> x + y;
+    // A obj = (x, y) -> x + y;
     
-    int result = obj.add(6, 3);
-    System.out.println(result);
+    // int result = obj.add(6, 3);
+    // System.out.println(result);
+    int x = 0;
+    int y = 18 / x;
+    System.out.println(y);
+    System.out.println("Bye");
   }
 }
