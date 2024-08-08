@@ -23,13 +23,13 @@ class Vipi {
     try {
       y = 18 / x;
       if (y == 0) {
-        throw new ArithmeticException();
+        throw new ArithmeticException("Cannot divide by zero");
        }
       
     } catch (ArithmeticException e) {
       
       y = 18 / 1;
-      System.out.println("Default Output");
+      System.out.println("Default Output" + e);
     
     } catch (Exception e) {
       System.out.println("Sth went Wrong " + e);
