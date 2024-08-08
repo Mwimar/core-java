@@ -1,17 +1,10 @@
 
 class MyException extends Exception {
   MyException (String string) {
-    super(string);
+    super(string);//passing to exception supreclass
   }
 }
 
-
-
-
-
-
-
- 
  
 
 class Vipi {
@@ -27,7 +20,7 @@ class Vipi {
     try {
       y = 18 / x;
       if (y == 0) {
-        throw new MyException("Cannot divide by zero");
+        throw new MyException("Cannot divide by zero");//throwing exception to catch
        }
       
     } catch (MyException e) {
@@ -36,7 +29,7 @@ class Vipi {
       System.out.println("Default Output" + e);
     
     } catch (Exception e) {
-      System.out.println("Sth went Wrong " + e);
+      System.out.println("Something went Wrong " + e);
     }
     System.out.println(y);
     System.out.println("Bye");
