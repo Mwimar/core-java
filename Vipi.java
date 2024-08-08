@@ -1,8 +1,15 @@
 
 @FunctionalInterface
 interface A {
-   void show();
+  void show();
+
 }
+
+class B implements A {
+  public void show() {
+    System.out.println("In B show");
+  }
+} 
 
  
  
@@ -10,6 +17,7 @@ interface A {
 class Vipi {
 
   public static void main(String a[]) {
-    
+    A obj = new B();
+    obj.show();
   }
 }
