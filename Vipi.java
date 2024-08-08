@@ -17,11 +17,11 @@ class B implements A {
 class Vipi {
 
   public static void main(String a[]) {
-    A obj = new A() {
-      public void show() {
+    A obj =  () ->
+      {
         System.out.println("In new Show");
-      }
     };
+    
     obj.show();
   }
 }
