@@ -1,9 +1,13 @@
 
-@FunctionalInterface
-interface A {
-  int add(int x, int z);
-
+class MyException extends Exception {
+  MyException (String string) {
+    
+  }
 }
+
+
+
+
 
 
 
@@ -23,10 +27,10 @@ class Vipi {
     try {
       y = 18 / x;
       if (y == 0) {
-        throw new ArithmeticException("Cannot divide by zero");
+        throw new MyException("Cannot divide by zero");
        }
       
-    } catch (ArithmeticException e) {
+    } catch (MyException e) {
       
       y = 18 / 1;
       System.out.println("Default Output" + e);
