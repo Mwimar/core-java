@@ -1,11 +1,12 @@
 class A {
-  public void show() {
+  public void showTheDatasHere() {
     System.out.println("In A show");
   }
 }
 
 class B extends A {
-  public void show() {
+  @Override
+  public void showTheDatasHere() {
     System.out.println("In B show");
   }
 }
@@ -17,6 +18,7 @@ class B extends A {
 class Vipi {
 
   public static void main(String a[]) {
-
+    A obj = new B();
+    obj.showTheDatasHere();
   }
 }
