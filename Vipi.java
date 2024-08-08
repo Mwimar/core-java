@@ -17,7 +17,7 @@ interface A {
 class Vipi {
 
   public static void main(String a[]) {
-    A obj =  (int i) -> System.out.println("In new Show");
+    A obj =  i -> System.out.println("In new Show");
     
     
     obj.show(7);
