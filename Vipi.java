@@ -1,5 +1,11 @@
-enum Status {
-  Running, Loading, Success, Failed
+enum Laptop {
+  Thinkpad(400), HP(9000), Mac(3000), Acer(500);
+  private int price;
+
+  private Laptop(int price) {
+    this.price = price;
+  }
+  
 }
  
  
@@ -8,9 +14,9 @@ class Vipi {
 
   public static void main(String a[]) {
 
-    Status[] rr = Status.values();
-    Status s = Status.Success;
-    System.out.println(s.getClass().getSuperclass());
+    // Status[] rr = Status.values();
+    // Status s = Status.Success;
+   
     // for (Status r : rr) {
     //   System.out.println(r);
     // }
@@ -24,20 +30,20 @@ class Vipi {
     // } else {
     //   System.out.println("Retry");
     // }
-    switch (s) {
-  case Running:
-  System.out.println("All good");
-  break;
-case Loading:
- System.out.println("Please wait");
-   break;
- case Success:
-   System.out.println("Done");
-   break;
- default:
-   System.out.println("Timeout");
-   break;
+//     switch (s) {
+//   case Running:
+//   System.out.println("All good");
+//   break;
+// case Loading:
+//  System.out.println("Please wait");
+//    break;
+//  case Success:
+//    System.out.println("Done");
+//    break;
+//  default:
+//    System.out.println("Timeout");
+//    break;
 
-}
+// }
   }
 }
