@@ -1,7 +1,7 @@
 
 class MyException extends Exception {
   MyException (String string) {
-    
+    super(string);
   }
 }
 
