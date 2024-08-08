@@ -10,7 +10,7 @@ class Vipi {
 
     Status[] rr = Status.values();
     Status s = Status.Success;
-
+    System.out.println(s.getClass().getSuperclass());
     // for (Status r : rr) {
     //   System.out.println(r);
     // }
@@ -36,6 +36,7 @@ case Loading:
    break;
  default:
    System.out.println("Timeout");
+   break;
 
 }
   }
