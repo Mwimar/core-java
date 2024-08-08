@@ -17,16 +17,19 @@ class Vipi {
     
     // int result = obj.add(6, 3);
     // System.out.println(result);
-    int x = 0;
+    int x = 20;
     int y = 0;
     
     try {
       y = 18 / x;
-       
+      if (y == 0) {
+        throw new ArithmeticException();
+       }
       
     } catch (ArithmeticException e) {
       
       y = 18 / 1;
+      System.out.println("Default Output");
     
     } catch (Exception e) {
       System.out.println("Sth went Wrong " + e);
