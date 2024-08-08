@@ -1,15 +1,15 @@
 
 @FunctionalInterface
 interface A {
-  void show();
+  void show(int i);
 
 }
 
-class B implements A {
-  public void show() {
-    System.out.println("In B show");
-  }
-} 
+// class B implements A {
+//   public void show() {
+//     System.out.println("In B show");
+//   }
+// } 
 
  
  
@@ -17,11 +17,9 @@ class B implements A {
 class Vipi {
 
   public static void main(String a[]) {
-    A obj =  () ->
-      {
-        System.out.println("In new Show");
-    };
+    A obj =  (int i) -> System.out.println("In new Show");
     
-    obj.show();
+    
+    obj.show(7);
   }
 }
