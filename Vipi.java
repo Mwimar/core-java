@@ -25,7 +25,7 @@ class Vipi {
        
       System.out.println(nums[5]);
      } catch (Exception e) {
-      System.out.println("Something is up!" + e);
+      System.out.println("Cannor divide by zero..");
     }
     System.out.println(y);
     System.out.println("Bye");
