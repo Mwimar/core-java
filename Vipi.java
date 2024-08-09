@@ -1,8 +1,8 @@
 
-class A  extends Thread{
+class A  implements Runnable{
 
   public void run() {
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i <5; i++) {
       System.out.println("Vipi");
       try {
         Thread.sleep(10);
@@ -14,10 +14,10 @@ class A  extends Thread{
   }
 }
 
-class B extends Thread{
+class B implements Runnable{
 
   public void run() {
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 5; i++) {
       System.out.println("Niaje");
       try {
         Thread.sleep(10);
