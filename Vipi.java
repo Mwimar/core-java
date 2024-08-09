@@ -12,6 +12,9 @@ class A {
  
 
 class Vipi {
+  static {
+    System.out.println("Class loaded");
+  }
 
   public static void main(String a[]) {
     // A obj = (x, y) -> x + y;
@@ -39,5 +42,8 @@ class Vipi {
   //   }
   //   System.out.println(y);
   //   System.out.println("Bye");
+
+  A obj = new A();
+  obj.show();
   }
 }
