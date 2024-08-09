@@ -1,12 +1,8 @@
 class A {
-  public void show(){
-
-    try {
-       Class.forName("Vipi");
-         
-     } catch (ClassNotFoundException e) {
-       System.out.println("Class not found "+ e);
-     }
+  public void show() throws ClassNotFoundException
+  {
+     Class.forName("Vip");        
+    
   }
 }
  
