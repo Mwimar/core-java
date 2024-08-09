@@ -39,7 +39,7 @@ class Counter {
 
 class Vipi {
 
-  public static void main(String a[]) {
+  public static void main(String a[]) throws InterruptedException {
     // A obj = (x, y) -> x + y;
 
     // int result = obj.add(6, 3);
@@ -94,9 +94,12 @@ class Vipi {
     // System.out.println("Obj priority:"+obj.getPriority());
     // Runnable obj1 = new A();
 
+    Counter c = new Counter();
+    
+
     Runnable obj1 = () -> {
       for (int i = 0; i < 1000; i++) {
-
+        c.increment();
       }
       try {
         Thread.sleep(10);
@@ -107,7 +110,7 @@ class Vipi {
 
     Runnable obj2 = () -> {
       for (int i = 0; i < 1000; i++) {
-
+        c.increment();
       }
       try {
         Thread.sleep(10);
@@ -119,6 +122,12 @@ class Vipi {
     Thread t2 = new Thread(obj2);
     t1.start();
     t2.start();
+
+    t1.join();
+    t2.join();
+
+    System.out.println(c.count);
+
   }
 
 }
