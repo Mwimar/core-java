@@ -1,7 +1,7 @@
 
 class A  extends Thread{
 
-  public void show() {
+  public void run() {
     for (int i = 0; i < 10; i++) {
       System.out.println("Vipi");
     }
@@ -10,7 +10,7 @@ class A  extends Thread{
 
 class B extends Thread{
 
-  public void show() {
+  public void run() {
     for (int i = 0; i < 10; i++) {
       System.out.println("Niaje");
     }
@@ -66,10 +66,10 @@ class Vipi {
     // }
  
     A obj = new A();
-    obj.show();
+    obj.start();
 
     B obj1 = new B();
-    obj1.show();
+    obj1.start();
   }
 
 }
