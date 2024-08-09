@@ -1,13 +1,25 @@
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+class A  extends Thread{
 
+  public void show() {
+    for (int i = 0; i < 10; i++) {
+      System.out.println("Vipi");
+    }
+  }
+}
 
+class B extends Thread{
+
+  public void show() {
+    for (int i = 0; i < 10; i++) {
+      System.out.println("Niaje");
+    }
+  }
+}
 class Vipi {
  
 
-  public static void main(String a[]) throws NumberFormatException, IOException {
+  public static void main(String a[])  {
     // A obj = (x, y) -> x + y;
 
     // int result = obj.add(6, 3);
@@ -41,17 +53,23 @@ class Vipi {
     //   e.printStackTrace();
     // }
 
-    int x = 0;
-    int y = 0;
+    // int x = 0;
+    // int y = 0;
      
-    try (BufferedReader bf = new BufferedReader(new InputStreamReader(System.in))) 
+    // try (BufferedReader bf = new BufferedReader(new InputStreamReader(System.in))) 
     
-    {
+    // {
           
-      x = Integer.parseInt(bf.readLine());
-    } finally {
+    //   x = Integer.parseInt(bf.readLine());
+    // } finally {
       
-    }
+    // }
+ 
+    A obj = new A();
+    obj.show();
 
+    B obj1 = new B();
+    obj1.show();
   }
+
 }
