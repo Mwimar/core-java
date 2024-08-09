@@ -32,7 +32,7 @@
 
 class Counter {
   int count;
-  public void increment() {
+  public synchronized  void increment() {
     count++;
   }
 }
@@ -98,7 +98,7 @@ class Vipi {
     
 
     Runnable obj1 = () -> {
-      for (int i = 0; i < 1000; i++) {
+      for (int i = 0; i < 10000; i++) {
         c.increment();
       }
       try {
@@ -109,7 +109,7 @@ class Vipi {
     };
 
     Runnable obj2 = () -> {
-      for (int i = 0; i < 1000; i++) {
+      for (int i = 0; i < 10000; i++) {
         c.increment();
       }
       try {
