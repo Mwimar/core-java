@@ -1,4 +1,6 @@
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 class A {
   public void show() throws ClassNotFoundException
@@ -48,8 +50,10 @@ class Vipi {
     //   e.printStackTrace();
     // }
 
+    InputStreamReader in = new InputStreamReader(System.in);
+    BufferedReader bf = new BufferedReader(in);
     System.out.println("Enter a number");
-    int num = System.in.read();
+    int num = Integer.parseInt(bf.readLine());
     System.out.println(num);
   }
 }
