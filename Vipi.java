@@ -2,8 +2,14 @@
 class A  extends Thread{
 
   public void run() {
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i < 100; i++) {
       System.out.println("Vipi");
+      try {
+        Thread.sleep(100);
+      } catch (InterruptedException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+      }
     }
   }
 }
@@ -11,7 +17,7 @@ class A  extends Thread{
 class B extends Thread{
 
   public void run() {
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i < 100; i++) {
       System.out.println("Niaje");
     }
   }
