@@ -1,12 +1,13 @@
 
-// import java.io.IOException;
-// import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 
 class Vipi {
  
 
-  public static void main(String a[]) {
+  public static void main(String a[]) throws NumberFormatException, IOException {
     // A obj = (x, y) -> x + y;
 
     // int result = obj.add(6, 3);
@@ -40,14 +41,16 @@ class Vipi {
     //   e.printStackTrace();
     // }
 
-    int x = 3;
+    int x = 0;
     int y = 0;
-    try {
-      y = 15 / x;
-    } catch (Exception e) {
-      System.out.println("Smth went wrong");
+     
+    try (BufferedReader bf = new BufferedReader(new InputStreamReader(System.in))) 
+    
+    {
+          
+      x = Integer.parseInt(bf.readLine());
     } finally {
-      System.out.println("Complete");
+      
     }
 
   }
