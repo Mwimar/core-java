@@ -88,19 +88,16 @@ class Vipi {
 
 
     
-    Runnable obj1 = new Runnable() {
-       public void run() {
+    Runnable obj1 = () -> 
+       {
     for (int i = 0; i <5; i++) {
           System.out.println("Vipi");
         }
-      try {
-        Thread.sleep(10);
+      try { Thread.sleep(10);
       } catch (InterruptedException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-      }
-    }
+        e.printStackTrace();}
     };
+    
        
     Runnable obj2 = new B();
     Thread t1 = new Thread(obj1);
