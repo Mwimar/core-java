@@ -40,6 +40,11 @@ class Vipi {
   //   System.out.println("Bye");
 
   A obj = new A();
-  obj.show();
+  try {
+    obj.show();
+  } catch (ClassNotFoundException e) {
+    // TODO Auto-generated catch block
+    e.printStackTrace();
+  }
   }
 }
