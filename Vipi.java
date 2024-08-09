@@ -14,6 +14,13 @@ class Vipi {
     
     // int result = obj.add(6, 3);
     // System.out.println(result);
+    try {
+      Class.forName("Demo");
+        
+    } catch (ClassNotFoundException e) {
+      System.out.println("Class not found");
+    }
+
     int x = 20;
     int y = 0;
     
