@@ -1,18 +1,18 @@
 
-class A  implements Runnable{
+// class A  implements Runnable{
 
-  public void run() {
-    for (int i = 0; i <5; i++) {
-      System.out.println("Vipi");
-      try {
-        Thread.sleep(10);
-      } catch (InterruptedException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-      }
-    }
-  }
-}
+//   public void run() {
+//     for (int i = 0; i <5; i++) {
+//       System.out.println("Vipi");
+//       try {
+//         Thread.sleep(10);
+//       } catch (InterruptedException e) {
+//         // TODO Auto-generated catch block
+//         e.printStackTrace();
+//       }
+//     }
+//   }
+// }
 
 class B implements Runnable{
 
@@ -84,8 +84,27 @@ class Vipi {
     // obj1.start();
     // obj1.setPriority(Thread.MAX_PRIORITY);
     // System.out.println("Obj priority:"+obj.getPriority());
-    Thread t1 = new Thread();
-    Thread t2 = new Thread();
+    // Runnable obj1 = new A();
+
+
+    
+    Runnable obj1 = new Runnable() {
+       public void run() {
+    for (int i = 0; i <5; i++) {
+          System.out.println("Vipi");
+        }
+      try {
+        Thread.sleep(10);
+      } catch (InterruptedException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+      }
+    }
+    };
+       
+    Runnable obj2 = new B();
+    Thread t1 = new Thread(obj1);
+    Thread t2 = new Thread(obj2);
     t1.start();
     t2.start();
   }
