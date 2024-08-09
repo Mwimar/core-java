@@ -1,22 +1,15 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
-class A {
-  public void show() throws ClassNotFoundException
-  {
-     Class.forName("Vip");        
-    
-  }
-}
- 
+import java.util.Scanner;
+
+// import java.io.BufferedReader;
+// import java.io.IOException;
+// import java.io.InputStreamReader;
+
 
 class Vipi {
-  static {
-    System.out.println("Class loaded");
-  }
+ 
 
-  public static void main(String a[]) throws IOException {
+  public static void main(String a[]) {
     // A obj = (x, y) -> x + y;
 
     // int result = obj.add(6, 3);
@@ -50,10 +43,11 @@ class Vipi {
     //   e.printStackTrace();
     // }
 
-    InputStreamReader in = new InputStreamReader(System.in);
-    BufferedReader bf = new BufferedReader(in);
-    System.out.println("Enter a number");
-    int num = Integer.parseInt(bf.readLine());
-    System.out.println(num);
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter a double");
+    Double dec = sc.nextDouble();
+    System.out.println(dec);
+    sc.close();
+
   }
 }
