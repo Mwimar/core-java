@@ -2,7 +2,7 @@
 class A  extends Thread{
 
   public void run() {
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 50; i++) {
       System.out.println("Vipi");
     }
   }
@@ -11,7 +11,7 @@ class A  extends Thread{
 class B extends Thread{
 
   public void run() {
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 50; i++) {
       System.out.println("Niaje");
     }
   }
@@ -70,6 +70,7 @@ class Vipi {
 
     B obj1 = new B();
     obj1.start();
+    obj1.setPriority(Thread.MAX_PRIORITY);
     System.out.println("Obj priority:"+obj.getPriority());
   }
 
