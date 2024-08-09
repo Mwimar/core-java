@@ -1,7 +1,4 @@
 
-import java.util.Scanner;
-
-// import java.io.BufferedReader;
 // import java.io.IOException;
 // import java.io.InputStreamReader;
 
@@ -43,11 +40,15 @@ class Vipi {
     //   e.printStackTrace();
     // }
 
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter a double");
-    Double dec = sc.nextDouble();
-    System.out.println(dec);
-    sc.close();
+    int x = 3;
+    int y = 0;
+    try {
+      y = 15 / x;
+    } catch (Exception e) {
+      System.out.println("Smth went wrong");
+    } finally {
+      System.out.println("Complete");
+    }
 
   }
 }
