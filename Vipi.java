@@ -70,6 +70,7 @@ class Vipi {
 
     B obj1 = new B();
     obj1.start();
+    System.out.println("Obj priority:"+obj.getPriority());
   }
 
 }
