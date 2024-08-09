@@ -77,18 +77,17 @@ class Vipi {
       
     // }
  
-    A obj = new A();
-    obj.start();
-try {
-        Thread.sleep(2);
-      } catch (InterruptedException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-      }
-    B obj1 = new B();
-    obj1.start();
-    obj1.setPriority(Thread.MAX_PRIORITY);
-    System.out.println("Obj priority:"+obj.getPriority());
+    // A obj = new A();
+    // obj.start();
+
+    // B obj1 = new B();
+    // obj1.start();
+    // obj1.setPriority(Thread.MAX_PRIORITY);
+    // System.out.println("Obj priority:"+obj.getPriority());
+    Thread t1 = new Thread();
+    Thread t2 = new Thread();
+    t1.start();
+    t2.start();
   }
 
 }
