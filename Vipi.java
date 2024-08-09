@@ -1,9 +1,24 @@
 
-// class A  implements Runnable{
+// // class A  implements Runnable{
+
+// //   public void run() {
+// //     for (int i = 0; i <5; i++) {
+// //       System.out.println("Vipi");
+// //       try {
+// //         Thread.sleep(10);
+// //       } catch (InterruptedException e) {
+// //         // TODO Auto-generated catch block
+// //         e.printStackTrace();
+// //       }
+// //     }
+// //   }
+// // }
+
+// class B implements Runnable{
 
 //   public void run() {
-//     for (int i = 0; i <5; i++) {
-//       System.out.println("Vipi");
+//     for (int i = 0; i < 5; i++) {
+//       System.out.println("Niaje");
 //       try {
 //         Thread.sleep(10);
 //       } catch (InterruptedException e) {
@@ -14,24 +29,17 @@
 //   }
 // }
 
-class B implements Runnable{
 
-  public void run() {
-    for (int i = 0; i < 5; i++) {
-      System.out.println("Niaje");
-      try {
-        Thread.sleep(10);
-      } catch (InterruptedException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-      }
-    }
+class Counter {
+  int count;
+  public void increment() {
+    count++;
   }
 }
-class Vipi {
- 
 
-  public static void main(String a[])  {
+class Vipi {
+
+  public static void main(String a[]) {
     // A obj = (x, y) -> x + y;
 
     // int result = obj.add(6, 3);
@@ -67,16 +75,16 @@ class Vipi {
 
     // int x = 0;
     // int y = 0;
-     
+
     // try (BufferedReader bf = new BufferedReader(new InputStreamReader(System.in))) 
-    
+
     // {
-          
+
     //   x = Integer.parseInt(bf.readLine());
     // } finally {
-      
+
     // }
- 
+
     // A obj = new A();
     // obj.start();
 
@@ -86,20 +94,27 @@ class Vipi {
     // System.out.println("Obj priority:"+obj.getPriority());
     // Runnable obj1 = new A();
 
+    Runnable obj1 = () -> {
+      for (int i = 0; i < 1000; i++) {
 
-    
-    Runnable obj1 = () -> 
-       {
-    for (int i = 0; i <5; i++) {
-          System.out.println("Vipi");
-        }
-      try { Thread.sleep(10);
+      }
+      try {
+        Thread.sleep(10);
       } catch (InterruptedException e) {
-        e.printStackTrace();}
+        e.printStackTrace();
+      }
     };
-    
-       
-    Runnable obj2 = new B();
+
+    Runnable obj2 = () -> {
+      for (int i = 0; i < 1000; i++) {
+
+      }
+      try {
+        Thread.sleep(10);
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
+    };
     Thread t1 = new Thread(obj1);
     Thread t2 = new Thread(obj2);
     t1.start();
