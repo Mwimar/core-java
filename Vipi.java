@@ -1,6 +1,7 @@
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -43,10 +44,10 @@ class Vipi {
     // for (String key : students.keySet()){
     //   System.out.println(key + ":"+ students.get(key));
     // }
-    Comparator<Integer> com = new Comparator<Integer>() 
+    Comparator<Student> com = new Comparator<Student>() 
     {
-     public int compare(Integer i, Integer j) {
-      if (i%10 > j%10){
+     public int compare(Student i, Student j) {
+      if (i.age> j.age){
         return 1;
       }else {
         return -1;
@@ -63,6 +64,8 @@ class Vipi {
     studs.add(new Student(24,"Jake"));
     studs.add(new Student(35, "Palmer"));
     
+    Collections.sort(studs, com);
+
     for (Student s : studs) {
       System.out.println(s);
       
