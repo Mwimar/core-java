@@ -1,6 +1,7 @@
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 
 
 
@@ -20,9 +21,15 @@ class Vipi {
     //   System.out.println(nums.get(i));
     // }
 
-    for (int n : nums) {
-  System.out.println(n);
-}
+    //     for (int n : nums) {
+    //   System.out.println(n);
+    // }
+
+    Consumer<Integer> con = n -> System.out.println(n);
+  
+    
+    nums.forEach(con);
+    // nums.forEach(n ->System.out.println(n));
 
     int sum = 0;
     for (int n : nums) {
