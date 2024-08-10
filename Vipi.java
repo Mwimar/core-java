@@ -1,5 +1,5 @@
 
-import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Map;
 
 
@@ -9,7 +9,7 @@ class Vipi {
 
   public static void main(String a[]) throws InterruptedException {
 
-    Map<String, Integer> students = new HashMap<>();
+    Map<String, Integer> students = new Hashtable<>();
 
     students.put("Kev", 90);
     students.put("Kodak", 80);
