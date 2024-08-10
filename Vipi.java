@@ -1,6 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -23,15 +24,28 @@ class Vipi {
     // for (String key : students.keySet()){
     //   System.out.println(key + ":"+ students.get(key));
     // }
-    
-    List<Integer> nums = new ArrayList<>();
-    nums.add(5);
-    nums.add(9);
-    nums.add(3);
-    nums.add(7);
-    Collections.sort(nums);
-System.out.println(nums);
+    Comparator<Integer> com = new Comparator<Integer>() 
+    {
+     public int compare(Integer i, Integer j) {
+      if (i%10 > j%10){
+        return 1;
+      }else {
+        return -1;
+      }
+     }
 
+    };
+
+
+
+
+    List<Integer> nums = new ArrayList<>();
+    nums.add(55);
+    nums.add(91);
+    nums.add(36);
+    nums.add(74);
+    Collections.sort(nums, com);
+    System.out.println(nums);
 
   }
 
