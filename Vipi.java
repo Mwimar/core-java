@@ -33,7 +33,7 @@ class Vipi {
     // Stream<Integer> s3 = s2.map(n -> n * 3);
 
     // int result = nums.stream().filter(p).map(fun).reduce(0, (c,e) -> c+e);
-    Stream <Integer> sortedValues = nums.stream().filter(p).sorted();
+    Stream <Integer> sortedValues = nums.parallelStream().filter(p).sorted();
 
     sortedValues.forEach(n -> System.out.println(n));
 
