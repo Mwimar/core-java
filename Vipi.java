@@ -7,7 +7,7 @@ import java.util.List;
 
 
 
-class Student{
+class Student implements Comparable<Student>{
 
   int age;
   String name;
@@ -21,6 +21,16 @@ class Student{
     this.name = name;
   }
 
+  @Override
+  public int compareTo(Student that) {
+    
+    if (this.age> that.age){
+        return 1;
+      }else {
+        return -1;
+      }
+    
+  }
   
   
 }
@@ -64,7 +74,8 @@ class Vipi {
     studs.add(new Student(24,"Jake"));
     studs.add(new Student(35, "Palmer"));
     
-    Collections.sort(studs, com);
+    // Collections.sort(studs, com);
+    Collections.sort(studs);
 
     for (Student s : studs) {
       System.out.println(s);
