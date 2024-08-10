@@ -1,5 +1,7 @@
 
-import java.util.Set;
+import java.util.Collection;
+import java.util.Iterator;
+// import java.util.Set;
 import java.util.TreeSet;
 
 
@@ -10,13 +12,14 @@ class Vipi {
 
   public static void main(String a[]) throws InterruptedException {
 
-    Set<Integer> nums = new TreeSet<Integer>();
-    nums.add(7);
-    nums.add(2);
-    nums.add(5);
-    nums.add(9);
+    Collection<Integer> nums = new TreeSet<Integer>();
+    nums.add(78);
+    nums.add(23);
+    nums.add(52);
+    nums.add(97);
     System.out.println(nums);
 
+    Iterator<Integer> values = nums.iterator();
     
 
     //     for (int n : nums) {
