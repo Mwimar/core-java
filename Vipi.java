@@ -17,7 +17,11 @@ class Vipi {
     students.put("Future", 94);
     students.put("Kev", 60);
     System.out.println(students.get("Kev"));
-    System.out.println(students.keySet());
+    // System.out.println(students.keySet());
+
+    for (String key : students.keySet()){
+      System.out.println(key + ":"+ students.get(key));
+    }
     
 
 
