@@ -15,7 +15,10 @@ class Vipi {
 
   public static void main(String a[]) throws InterruptedException {
 
-    List<Integer> nums =  Arrays.asList(4, 5, 7, 3, 2,6);
+    List<Integer> nums = Arrays.asList(4, 5, 7, 3, 2, 6);
+    for (int i = 0; i < nums.size(); i++) {
+      System.out.println(nums.get(i));
+    }
     int sum = 0;
     for (int n : nums) {
 
@@ -26,7 +29,7 @@ class Vipi {
      
     }
     
-    System.out.println(sum);
+    // System.out.println(sum);
 
 
   }
