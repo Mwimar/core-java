@@ -1,5 +1,6 @@
 
-import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
 
 
@@ -9,12 +10,11 @@ class Vipi {
 
   public static void main(String a[]) throws InterruptedException {
 
-    HashSet<Integer> nums = new HashSet<Integer>();
+    Set<Integer> nums = new TreeSet<Integer>();
     nums.add(7);
     nums.add(2);
     nums.add(5);
     nums.add(9);
-    nums.add(2);
     System.out.println(nums);
 
     
