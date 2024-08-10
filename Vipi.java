@@ -1,9 +1,28 @@
 
+
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+
+
+class Student{
+
+  int age;
+  String name;
+  
+  public String toString() {
+    return "Students [age=" + age + ", name=" + name + "]";
+  }
+
+  public Student(int age, String name) {
+    this.age = age;
+    this.name = name;
+  }
+
+  
+  
+}
 
 
 
@@ -38,14 +57,17 @@ class Vipi {
 
 
 
-
-    List<Integer> nums = new ArrayList<>();
-    nums.add(55);
-    nums.add(91);
-    nums.add(36);
-    nums.add(74);
-    Collections.sort(nums, com);
-    System.out.println(nums);
+    List<Student> studs = new ArrayList<>();
+    studs.add(new Student(25,"Mwima"));
+    studs.add(new Student(22,"Kodak"));
+    studs.add(new Student(24,"Jake"));
+    studs.add(new Student(35, "Palmer"));
+    
+    for (Student s : studs) {
+      System.out.println(s);
+      
+    }
+  
 
   }
 
