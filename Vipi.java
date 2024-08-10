@@ -54,17 +54,11 @@ class Vipi {
     // for (String key : students.keySet()){
     //   System.out.println(key + ":"+ students.get(key));
     // }
-    Comparator<Student> com = new Comparator<Student>() 
-    {
-     public int compare(Student i, Student j) {
-      if (i.age> j.age){
-        return 1;
-      }else {
-        return -1;
-      }
-     }
+    Comparator<Student> com = (Student i, Student j) ->   i.age> j.age? 1: -1;
+    
+     
 
-    };
+    
 
 
 
