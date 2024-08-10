@@ -1,7 +1,6 @@
 
 import java.util.Collection;
 import java.util.Iterator;
-// import java.util.Set;
 import java.util.TreeSet;
 
 
@@ -17,9 +16,13 @@ class Vipi {
     nums.add(23);
     nums.add(52);
     nums.add(97);
-    System.out.println(nums);
+    // System.out.println(nums);
 
     Iterator<Integer> values = nums.iterator();
+    while (values.hasNext()) {
+      
+      System.out.println(values.next());
+    }
     
 
     //     for (int n : nums) {
