@@ -53,7 +53,9 @@ class MethodRefEx {
         //     students.add(new Student(name));
         // }
 
-        students = names.stream().map(name -> new Student(name)).toList();
+        // students = names.stream().map(name -> new Student(name)).toList();
+        // System.out.println(students);
+        students = names.stream().map(Student::new).toList();
         System.out.println(students);
 
         // List<String> Unames = names.stream().map(name -> name.toUpperCase()).toList();
