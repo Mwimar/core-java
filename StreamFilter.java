@@ -2,8 +2,11 @@
 import java.util.Arrays;
 import java.util.List;
 
+public class StreamFilter {
 
-class StreamEx {
+
+
+
   public static void main(String[] args) {
     
     List<String> names = Arrays.asList("Eenie", "Meenie", "Miney", "Mee");
@@ -14,9 +17,12 @@ class StreamEx {
     System.out.println(name);
    
    
-  }
+  
   
 
+
+    
+}
 
     
 }
