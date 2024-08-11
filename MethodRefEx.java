@@ -9,9 +9,12 @@ class MethodRefEx {
         // List<String> Unames = names.stream().map(name -> name.toUpperCase()).toList();
         List<String> Unames = names.stream()
         .map(String::toUpperCase)
-        .toList();
+                .toList();
+        
+        Unames.forEach(i -> System.out.println(i));
 
-        System.out.println(Unames);
+
+        // System.out.println(Unames);
     }
     
 }
