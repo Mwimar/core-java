@@ -10,7 +10,7 @@ class StreamEx {
     List<String> names = Arrays.asList("Eenie", "Meenie", "Miney", "Mee");
 
     Optional<String> name = names.stream().filter(str -> str.contains("o")).findFirst();
-    System.out.println(name.get());
+    System.out.println(name.orElse("Not found"));
    
   }
   
