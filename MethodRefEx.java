@@ -11,7 +11,8 @@ class MethodRefEx {
         .map(String::toUpperCase)
                 .toList();
         
-        Unames.forEach(i -> System.out.println(i));
+        // Unames.forEach(i -> System.out.println(i));
+        Unames.forEach(System.out::println);
 
 
         // System.out.println(Unames);
