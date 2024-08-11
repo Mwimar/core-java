@@ -14,16 +14,27 @@ class StreamEx {
     Random ran = new Random();
   
     
-    for(int i = 1; i<=10000; i++)
-    {
-      nums.add(ran.nextInt(100));
-    }
-    System.out.println(nums);
+    // for(int i = 1; i<=10000; i++)
+    // {
+    //   nums.add(ran.nextInt(100));
+    // }
+    // System.out.println(nums);
 
-    int sum1 = nums.stream().map(i -> i + 2).reduce(0, (c, e) -> c + e);
+    int sum1 = nums.stream()
+        .map(i -> i + 2)
+        .reduce(0, (c, e) -> c + e);
+
+    int sum2 = nums.stream()
+        .map(i -> i + 2)
+        .mapToInt(i -> i)
+        .sum();
     
+
+        System.out.println(sum1 + ":" + sum2);
+
   }
   
+
 
     
 }
