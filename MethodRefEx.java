@@ -49,19 +49,20 @@ class MethodRefEx {
 
         List<Student> students = new ArrayList<>();
 
-        for (String name : names) {
-            students.add(new Student(name));
-        }
-System.out.println(students);
-        
+        // for (String name : names) {
+        //     students.add(new Student(name));
+        // }
+
+        students = names.stream().map(name -> new Student(name)).toList();
+        System.out.println(students);
+
         // List<String> Unames = names.stream().map(name -> name.toUpperCase()).toList();
         // List<String> Unames = names.stream()
         // .map(String::toUpperCase)
         //         .toList();
-        
+
         // Unames.forEach(i -> System.out.println(i));
         // Unames.forEach(System.out::println);
-
 
         // System.out.println(Unames);
     }
