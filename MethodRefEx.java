@@ -54,6 +54,33 @@ class MethodRefEx {
         // }
 
         // students = names.stream().map(name -> new Student(name)).toList();
+    System.out.println(names.stream().getClass());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         // System.out.println(students);
         students = names.stream().map(Student::new).toList();
         System.out.println(students);
