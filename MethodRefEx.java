@@ -54,7 +54,7 @@ class MethodRefEx {
         // }
 
         // students = names.stream().map(name -> new Student(name)).toList();
-    System.out.println(names.stream().getClass());
+    System.out.println(names.stream().count());
 
 
 
